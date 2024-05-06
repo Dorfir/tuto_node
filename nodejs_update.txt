@@ -1,0 +1,7 @@
+- utiliser l'instaler pour windows, il ecrase (normalement) la version précédente
+Apres ça il peut être utile de mettre a jour npm manuelement :
+npm install -g npm@latest
+
+- nvm
+
+- chocolatey

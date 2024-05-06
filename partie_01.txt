@@ -1,0 +1,45 @@
+Node JS, moteur Javascript V8 de google.
+Architecture non bloquante (évenements).
+
+Applications que l'on peut développer en NodeJS :
+- Site Web
+- Application Web
+- Backend API Rest (Representational state transfer) - Unidirectionel client -> serveur
+- Applications temps réel (messagerie, google docs) - Bidirectionelle Socket.IO
+- Scripts
+
+
+
+-------------------------------------------------------
+
+Créer un dossier du nom de l'appli
+
+Créer un fichier app.js
+
+Lancer la commande npm init => crée le package.json
+
+Installer express :
+npm install express
+
+-- app.js
+
+const express = require('express')
+const app = express()
+const port = 3000
+app.get('/', (req, res) => { res.send("Page web") })
+app.listen(port, () => {
+    console.log(`Express running and listening on port : ${port}`)
+})
+
+-- package.json
+"scripts": {
+  "start": "node app.js"
+},
+
+--------------------------------------------------------
+nodemon
+
+
+npm install nodemon --save-dev
+"start": "nodemon app.js"
+
