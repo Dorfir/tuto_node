@@ -17,7 +17,7 @@ app
     .use(morgan('dev'))
     .use(bodyParser.json())
 
-app.get('/', (req, res) => { res.send("Page web 2 !") })
+app.get('/', (req, res) => { res.send("Page web 3 !") })
 
 app.listen(port, () => {
     console.log(`Express running and listening on port : ${port}`)
