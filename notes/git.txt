@@ -22,3 +22,9 @@ git push -u origin main
 
 
 -- ----------------------------------
+
+list of configured remote URLs 
+git remote -v
+
+-- ----------------------------------
+
